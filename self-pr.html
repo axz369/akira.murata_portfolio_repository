@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="css/self-pr.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>My Portforio</title>
+</head>
+<body>
+  <header class="header ">
+    <h1 class="header-logo">
+        <a>AKIRA MURATA</a>
+    </h1>
+    <nav class="header__nav nav" id="js-nav">
+        <ul class="nav__items nav-items">
+          <li class="nav-items__item"><a href="index.html">top</a></li>
+          <li class="nav-items__item"><a href="works.html">works</a></li>
+          <li class="nav-items__item"><a href="self-pr.html">self-PR</a></li>
+        </ul>
+      </nav>
+      
+      
+      <button class="header__hamburger hamburger active" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  </div>
+</header>
+
+<!-- サイト内検索フォーム　-->
+<form name="highlight" class="search-form">
+  <input type="text" id="word" class="search-input" placeholder="サイト内検索" /> 
+  <input type="button" class="search-button" onclick="doHighlight()" value="検索" /> 
+</form>
+<!-- サイト内検索フォーム　-->
+
+    <main id="target">  
+      <h2>self-PR</h2>
+        <div class="container">
+            <div class="pr">
+              <section class="pr-section">
+                <p class="pr-heading">学生時代取り組んだこと</p>
+              <p class="pr-content">
+                大学のサークル活動でUnityを使ったゲーム開発の経験があります。
+                今まで3つのゲームを開発し,横スクロールアクションを2つと2人で
+                遊べる対戦ゲームの計3つのゲーム開発を行いました。
+              </p>
+              <p class="pr-content">
+                横スクロールアクションはチームで開発を行い、初めてのゲーム制作
+                で何とか自分たちで情報を集めながら開発を行い大学祭で出展しました。
+                この最初のゲーム開発で初めての事でもチームで協力し分からないことも
+                自主的に調べて問題を解決する力がついたと思います。
+              </p>
+              <p class="pr-content">
+                また、大学祭では友人同士で来場される方が多いことに気付き2人で遊べる
+                対戦ゲームの開発を思いつきました。シンプルな操作のゲームですが、
+                同じサークルの仲間からはデザインやゲーム自体の面白さを評価され自信の
+                ある出来なので2023年度の大学祭に出展予定です。              
+                このように私は初めての事でも興味のあることには挑戦し、努力を継続できる
+                人間だと思います。
+              </p>           
+              </section>
+  
+              <section class="pr-section">
+                <p class="pr-heading">自覚している性格</p>
+              <p  class="pr-content">
+                私はまじめで計画性のある性格だと自覚しています。
+                例えば基本的なことですが、大学の講義でも自分に足りないと感じた部分
+                に関しては積極的に自習するように心がけています。現在では単位を
+                落としたことはなく、ほとんどの教科でA評価をとれています。
+                その他にも現在ITパスポート、セキュリティマネジメントといった
+                情報処理系の資格を保持しているのですが、
+                試験日までにどれくらいのペースで学習を続ければいいかを考え
+                計画を立て実際に合格することができました。
+                またその計画通りに日々こつこつと努力を続けられるというところも
+                長所だと考えています。
+              </p>
+              </section> 
+  
+              <section class="pr-section">
+                <p class="pr-heading">現在取り組んでいること</p>
+              <p  class="pr-content">
+                現在は大学内での利用を想定したwebアプリケーションの開発に取り組んでいます。
+                このプロジェクトも複数のメンバーでのチーム開発で知識がない状態でスタート
+                したのですが、html, cssで簡単なサイトを作れるようになり、現在はnode.jsで
+                フロントエンドバックエンドの両方を学んでいます。
+              </p>
+              </section>  
+              
+              <section class="pr-section">
+                <p class="pr-heading">資格</p>
+                <p class="pr-content">
+                  情報処理系の資格であるITパスポートとセキュリティマネジメント試験の資格
+                  を保持しており、どちらも試験勉強を始めてから1か月ほどで合格した経験が
+                  あります。
+                </p>
+              </section>
+              
+            </div> 
+    </main>
+    
+    <div class="page-top"><a href="#">ページトップ</a></div>
+    <div class="bread">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="#">self-PR</a></li>
+      </ul>
+    </div>
+    <footer>        
+        <div class="copyright">&copy;AKIRA MURATA</div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+
+<!--サイト内検索js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- jquery.highlight-5.js プラグイン -->
+<script>
+/*
+highlight v5
+Highlights arbitrary terms.
+<https://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html>
+MIT license.
+Johann Burkard
+<https://johannburkard.de>
+<mailto:jb@eaio.com>
+*/
+jQuery.fn.highlight = function(pat) {
+function innerHighlight(node, pat) {
+var skip = 0;
+if (node.nodeType == 3) {
+var pos = node.data.toUpperCase().indexOf(pat);
+pos -= (node.data.substr(0, pos).toUpperCase().length - node.data.substr(0, pos).length);
+if (pos >= 0) {
+var spannode = document.createElement('span');
+spannode.className = 'highlight';
+var middlebit = node.splitText(pos);
+var endbit = middlebit.splitText(pat.length);
+var middleclone = middlebit.cloneNode(true);
+spannode.appendChild(middleclone);
+middlebit.parentNode.replaceChild(spannode, middlebit);
+skip = 1;
+}
+}
+else if (node.nodeType == 1 && node.childNodes && !/(script|style)/i.test(node.tagName)) {
+for (var i = 0; i < node.childNodes.length; ++i) {
+i += innerHighlight(node.childNodes[i], pat);
+}
+}
+return skip;
+}
+return this.length && pat && pat.length ? this.each(function() {
+innerHighlight(this, pat.toUpperCase());
+}) : this;
+};
+jQuery.fn.removeHighlight = function() {
+return this.find("span.highlight").each(function() {
+this.parentNode.firstChild.nodeName;
+with (this.parentNode) {
+replaceChild(this.firstChild, this);
+normalize();
+}
+}).end();
+};
+</script>
+<!-- Highlight & 最初の文字へスクロール -->
+<script>
+function doHighlight() {
+var word = $("#word").val()
+.replace(/^\s+|\s+$/g, "")
+.replace(/\s+/g, " ")
+.split(" ");
+for (i in word) {
+if (word[i] != "") {
+$("#target").removeHighlight();
+$("#target").highlight(word[i]);
+var ypos = $(".highlight").offset().top-120;
+window.scrollTo({
+left: 0,
+top: ypos,
+behavior: "smooth"
+});
+}
+}
+}
+</script>
+<!--サイト内検索js-->
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+body{
+    width: 100%;
+    background-color: rgb(222, 222, 222);
+}
+main{
+    width: 60%;
+    margin: auto;    
+}
+h1{
+    line-height: 100px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+header{
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    top: 0;
+    position: fixed;    
+    width: 100%;
+    z-index: 1;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:underline 3px;
+}
+.nav{
+    text-align: right;
+    margin-left: auto;
+    line-height: 100px;
+    margin-right: 20px;
+}
+.nav-list{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-list a{
+    text-decoration:none;
+    color: black;
+}
+/*---------------*/
+
+
+/*--------------------------------
+ サイト内検索
+---------------------------------*/
+.highlight{
+  font-weight:bold;
+  background-color:rgb(255, 146, 67);
+}
+.search-form{
+  width: 300px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 120px;
+}
+.search-input{
+  width: 240px;
+  height: 40px;
+  background-color: #2b2b2b;
+  color: aliceblue;
+  padding-left: 5px;
+}
+.search-button{
+  background-color: #2b2b2b;
+  color: #888888;
+  height: 40px;
+  width: 50px;
+}
+/*--------------------------------
+ サイト内検索
+---------------------------------*/
+
+/*--------------------------------
+ メイン
+---------------------------------*/
+.title{
+    margin-bottom: 20px;
+}
+/*--------------------------------
+ メイン
+---------------------------------*/
+
+/*--------------------------------
+ works
+---------------------------------*/
+section{
+    margin-bottom: 150px;
+}
+.works-info{
+    margin-bottom: 30px;
+    border-bottom: solid 3px;
+    width: 60px;
+    text-align: center;
+}
+.works-item{
+    width: 100%;
+    display: flex;
+}
+.works-visual{
+    width: 50%;
+}
+.works-video{
+    width: 100%;
+}
+.works-img{
+    width: 100%;
+}
+.works-explanation{
+    width: 50%;
+    margin-left: 50px;
+}
+.works-img img{
+    width: 100%;
+}
+/*--------------------------------
+ works
+---------------------------------*/
+
+/*--------------------------------
+　フッター
+---------------------------------*/
+.page-top{
+    background-color: rgb(77, 77, 77);
+    height: 50px;
+    text-align: center;
+}
+.page-top a{
+    line-height: 50px;
+    text-decoration: none;
+    color: aliceblue;
+}
+.bread{
+  height: 50px;
+  background-color: rgb(77, 77, 77);
+  color: aliceblue;
+}
+.bread ul{
+  width: 100%;
+  display: flex;
+}
+.bread li{
+  padding: 10px;
+}
+.bread li:after {
+  content: '\003e'; /* 「>」を要素間の区切り文字として表示 */
+  margin-left: 20px; /* 区切り文字と要素の間隔を調整 */
+  color: #888888; /* 区切り文字の文字色 */
+}
+.bread li:last-child:after {
+  content: ""; /* 最後のliの後ろには区切り文字を表示しない */
+}
+.bread a{
+  color: aliceblue;
+}
+footer{
+    height: 90px;
+    background-color: rgb(38, 38, 38);
+    text-align: center;
+}
+.copyright{
+    color: aliceblue;
+    line-height: 90px;
+}
+/*--------------------------------
+　フッター
+---------------------------------*/
+
+
+
+/*--------------------------------
+　ハンバーガー
+---------------------------------*/
+/* ヘッダーのナビ部分 */
+.header__nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%); 
+  background-color: #777777; /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
+  transition: ease .4s; /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
+}
+/* ハンバーガーメニュー */
+.header__hamburger {
+  width: 48px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 12px;
+}
+
+.hamburger {
+  background-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  border-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  z-index: 9999;
+}
+
+
+
+/* ハンバーガーメニューの線 */
+.hamburger span {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: relative;
+  transition: ease .4s; /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
+  display: block;
+}
+
+  
+.header__nav.active {
+transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+transform: rotate(0deg);
+top: 8;
+}
+
+.hamburger.active span:nth-child(2) {
+opacity: 1;
+margin: 8px 0;
+}
+
+.hamburger.active span:nth-child(3) {
+transform: rotate(0deg);
+top: 0;
+}
+
+/* ハンバーガーメニュークリック後のスタイル */
+.hamburger span:nth-child(1) {
+  top: -3px;
+  transform: rotate(45deg);
+}
+
+.hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: -4.5px;
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+
+.nav-items {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* ナビのリンク */
+.nav-items__item a {
+  color: black;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.nav-items__item:last-child a {
+  margin-bottom: 0;
+}
+/*--------------------------------
+　ハンバーガー
+---------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*レスポンシブ*/
+
+
+/*--------------------------------
+　ハンバーガー
+---------------------------------*/
+@media screen and (min-width: 800px){
+/*PC時非表示にする*/
+.hamburger {
+  display: none;
+}
+
+.header__nav {
+  position: static;
+  transform: initial;
+  background-color: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+.nav__items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: initial;
+  justify-content: space-between;
+  position: inherit;
+ top: 0;
+ left: 0;
+ transform: translate(0, 0);
+ width: 300px;
+}
+.nav-items__item a {
+  margin-bottom: 0;
+ }
+}
+/*--------------------------------
+　ハンバーガー
+---------------------------------*/
+
+
+
+
+
+@media screen and (max-width: 800px){
+  main{
+    width: 70%;
+  }
+  h2{
+    margin-bottom: 30px;
+    margin-top: 120px;
+  }
+  .works-item{
+    display: block;
+  }
+  .works-visual{
+    width: 100%;
+  }
+  .works-explanation{
+    width: 100%;
+    margin: auto;
+  }
+  }
+  
+  @media screen and (max-width: 500px){
+  main{
+    width: 90%;
+  }
+  .pr-heading{
+    font-size: 25px;
+  }
+  }

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="css/works.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>My Portforio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+</head>
+<body>
+  <header class="header ">
+    <h1 class="header-logo">
+        <a>AKIRA MURATA</a>
+    </h1>
+    <nav class="header__nav nav" id="js-nav">
+        <ul class="nav__items nav-items">
+          <li class="nav-items__item"><a href="index.html">top</a></li>
+          <li class="nav-items__item"><a href="works.html">works</a></li>
+          <li class="nav-items__item"><a href="self-pr.html">self-PR</a></li>
+        </ul>
+      </nav>
+      
+      
+      <button class="header__hamburger hamburger active" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  </div>
+</header>
+
+<!-- サイト内検索フォーム　-->
+<form name="highlight" class="search-form">
+  <input type="text" id="word" class="search-input" placeholder="サイト内検索" /> 
+  <input type="button" class="search-button" onclick="doHighlight()" value="検索" /> 
+</form>
+<!-- サイト内検索フォーム　-->
+
+    <main id="target">    
+        <h2>works</h2>
+        <section class="unity section">            
+            <p class="works-info">Unity</p>
+            <ul class="slider">
+                <li>
+                    <div class="works-item">
+                        <div class="works-visual">
+                          <div class="works-img">
+                            <video class="works-video" src="img/video1.mp4" controls></video>
+                          </div>
+                        <p class="works-name">ウサギと猫の奇妙な冒険</p>
+                        </div>              
+                        <div class="works-explanation">
+                          <p>動画です。再生してご覧ください。</p>
+                          <br>
+                          <p>「ウサギと猫の奇妙な冒険」は私が大学のサークルであるEDPSに入部して
+                            初めて制作した横スクロールアクションゲームです。
+                            大学祭では小学生なども来ると聞いていたので子供が気に入るような可愛いデザインで制作しました。
+                            チームで取り組んだ制作で初めての事だらけだったの事が苦労した点です。
+                          </p>
+                        </div>
+                      </div>
+                </li>
+
+                <li>
+                    <div class="works-item">
+                        <div class="works-visual">
+                          <div class="works-img">
+                            <video class="works-video" src="img/video2.mp4" controls></video>
+                          </div>
+                        <p class="works-name">Red vs Blue</p>
+                        </div>              
+                        <div class="works-explanation">
+                          <p>動画です。再生してご覧ください。</p>
+                          <br>
+                          <p>「Red vs Blue」は大学祭で友人同士で来場される方が多かったため、
+                            友人同士で楽しめるゲームを作ろうと考え制作しました。
+                            操作はシンプルな対戦ゲームですが、攻撃するまでのチャージ機能を搭載したりなど
+                            自信のある出来なので2023年度の大学祭で出展予定です。
+                          </p>
+                        </div>
+                      </div>
+                </li>
+
+                <li>
+                    <div class="works-item">
+                        <div class="works-visual">
+                          <div class="works-img">
+                            <video class="works-video" src="img/video3.mp4" controls></video>
+                          </div>
+                        <p class="works-name">flying penguin</p>
+                        </div>              
+                        <div class="works-explanation">
+                          <p>動画です。再生してご覧ください。</p>
+                          <br>
+                          <p>「flying penguin」は3つめに制作したゲームです。
+                            個人で制作し数日ほどで完成しました。
+                            一つ目に制作した「ウサギと猫の奇妙な冒険」で身についた技術があったので
+                            初めてのゲーム制作より簡単に作れたと思います。
+                            鳥が好きなのでお気に入りのゲームです。飛べない鳥(ペンギン)
+                            が飛んでいる設定も好きです。
+                          </p>
+                        </div>
+                      </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="php section">
+            <p class="works-info">PHP</p>
+            <ul class="slider">
+                <li>
+                    <div class="works-item">
+                        <div class="works-visual">
+                          <div class="works-img"><img src="img/php-chat.jpg"></div>
+                        <p class="works-name">データベース掲示板</p>
+                        </div>              
+                        <div class="works-explanation">
+                          <p>PHPを学び始めて最初の1週間で制作した作品です。</p>
+                          <br>
+                          <a href="https://github.com/axz369/teckBase_chat-app_repository">githubのURL</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="works-item">
+                        <div class="works-visual">
+                          <div class="works-img"><img src="img/todolist.jpg"></div>
+                        <p class="works-name">ToDoリスト</p>
+                        </div>              
+                        <div class="works-explanation">
+                          <p>PHPで作った2つ目の作品です</p>
+                          <p>削除を各項目ごとに行う処理が勉強になりました。</p>
+                          <br>
+                          <a href="https://github.com/axz369/todolist_portfolio_repository">githubのURL</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="js section">
+            <p class="works-info">Node.js</p>
+            <div class="works-item">
+                <div class="works-visual">
+                  <div class="works-img"><img src="img/osagari_image.jpg"></div>
+                <p class="works-name">おさがりプロジェクト</p>
+                </div>              
+                <div class="works-explanation">
+                  <p>現在制作中のwebアプリのイメージ図です。</p>
+                  <p>「おさがりプロジェクト」と言い、大学内で先輩から
+                    後輩に使い終わった教科書を譲るアプリです</p>
+                  <p>大学の教科書は高価で入学したばかりで先輩に知り合いがいない場合
+                    自分で買うしかないという負担を減らす目的でこのアプリ制作に取り掛かりました。</p>
+                </div>
+              </div>
+        </section>
+    </main>
+    
+    <div class="page-top"><a href="#">ページトップ</a></div>
+    <div class="bread">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="#">works</a></li>
+      </ul>
+    </div>
+    <footer>        
+        <div class="copyright">&copy;AKIRA MURATA</div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            autoplay: true,
+            dots: true,
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+
+    <!--サイト内検索js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- jquery.highlight-5.js プラグイン -->
+    <script>
+    /*
+    highlight v5
+    Highlights arbitrary terms.
+    <https://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html>
+    MIT license.
+    Johann Burkard
+    <https://johannburkard.de>
+    <mailto:jb@eaio.com>
+    */
+    jQuery.fn.highlight = function(pat) {
+    function innerHighlight(node, pat) {
+    var skip = 0;
+    if (node.nodeType == 3) {
+    var pos = node.data.toUpperCase().indexOf(pat);
+    pos -= (node.data.substr(0, pos).toUpperCase().length - node.data.substr(0, pos).length);
+    if (pos >= 0) {
+    var spannode = document.createElement('span');
+    spannode.className = 'highlight';
+    var middlebit = node.splitText(pos);
+    var endbit = middlebit.splitText(pat.length);
+    var middleclone = middlebit.cloneNode(true);
+    spannode.appendChild(middleclone);
+    middlebit.parentNode.replaceChild(spannode, middlebit);
+    skip = 1;
+    }
+    }
+    else if (node.nodeType == 1 && node.childNodes && !/(script|style)/i.test(node.tagName)) {
+    for (var i = 0; i < node.childNodes.length; ++i) {
+    i += innerHighlight(node.childNodes[i], pat);
+    }
+    }
+    return skip;
+    }
+    return this.length && pat && pat.length ? this.each(function() {
+    innerHighlight(this, pat.toUpperCase());
+    }) : this;
+    };
+    jQuery.fn.removeHighlight = function() {
+    return this.find("span.highlight").each(function() {
+    this.parentNode.firstChild.nodeName;
+    with (this.parentNode) {
+    replaceChild(this.firstChild, this);
+    normalize();
+    }
+    }).end();
+    };
+    </script>
+    <!-- Highlight & 最初の文字へスクロール -->
+    <script>
+    function doHighlight() {
+    var word = $("#word").val()
+    .replace(/^\s+|\s+$/g, "")
+    .replace(/\s+/g, " ")
+    .split(" ");
+    for (i in word) {
+    if (word[i] != "") {
+    $("#target").removeHighlight();
+    $("#target").highlight(word[i]);
+    var ypos = $(".highlight").offset().top-120;
+    window.scrollTo({
+    left: 0,
+    top: ypos,
+    behavior: "smooth"
+    });
+    }
+    }
+    }
+    </script>
+    <!--サイト内検索js-->
+    
+</body>
+</html>
